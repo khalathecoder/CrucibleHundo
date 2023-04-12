@@ -36,7 +36,7 @@ function displayNumbers(numbers) {
     for (let index = 0; index < numbers.length; index = index + 1) {
         let currentNumber = numbers[index];
 
-        results = results + "<tr><td>" + currentNumber + "</td></tr>";
+        results = results + `<tr><td>${currentNumber}</td></tr>`;
     }
 
     let tableBody = document.getElementById('results');
