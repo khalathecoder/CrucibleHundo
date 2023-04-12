@@ -8,8 +8,20 @@ function getValues() {
   //parseint forces the value to be an integer; this is because any info from html is text by default
   let endNumber = parseInt(endValue); //startNumber = 100
 
-  let numberArray = generateNumbers(startNumber, endNumber);
+  if (Number.isInteger(startNumber) == false && Number.isInteger(endNumber)) {
+
+    // if they are valid numbers then proceed to next step
+
+    let numberArray = generateNumbers(startNumber, endNumber);
   displayNumbers(numberArray);
+  } else {
+    //else, display an error and stop the js
+    Swal.fire({
+        icon: 'error',
+        title: "Oops!",
+        text: 'Please enter valid numbers for the start and end values.'
+      });
+  }
 }
 
 // generate the range of numbers to display
