@@ -95,3 +95,8 @@
     max-width: 400px;
     border-radius: 30px;
   }
+
+  .evenNumber {
+    font-weight: bolder;
+    color: red !important;
+  }
