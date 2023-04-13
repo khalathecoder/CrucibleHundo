@@ -60,6 +60,11 @@
     background: var(--kw-primary-color);
   }
 
+  .navbar-brand {
+    font-size: 2em;
+    font-family: "Fira Sans", sans-serif;
+  }
+
   footer {
         background: var(--kw-primary-color);
         color: var(--kw-light-color);
