@@ -8,7 +8,7 @@ function getValues() {
   //parseint forces the value to be an integer; this is because any info from html is text by default
   let endNumber = parseInt(endValue); //startNumber = 100
 
-  if (Number.isInteger(startNumber) == false && Number.isInteger(endNumber)) {
+  if (Number.isInteger(startNumber) == true && Number.isInteger(endNumber)) {
 
     // if they are valid numbers then proceed to next step
 
